@@ -1,0 +1,116 @@
+body {
+    text-align: center;
+    background-color: #fae4e4;
+}
+
+h1 {
+    font-size: 4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 80px;
+    display: inline-block;
+    position: relative;
+    cursor: default;
+}
+
+h1#vermelho::before {
+    content: "";
+    background-color: #F64A1B;
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: transform 300ms ease;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+h1#vermelho:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#Fundovermelho::before {
+    content: "";
+    background-color: #EB8739;
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: transform 300ms ease;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+#Fundovermelho:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+h1#azul::before {
+    content: "";
+    background-color: #3BA1F6;
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: transform 300ms ease;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+h1#azul:hover::before {
+    transform: scaleX(1);
+    
+}
+
+#Fundoazul::before {
+    content: "";
+    background-color: #4A27EB;
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: transform 300ms ease;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+#Fundoazul:hover::before {
+    transform: scaleX(1);
+    
+}
+
+h1#roxo::before {
+    content: "";
+    background-color: #D91A60;
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: transform 300ms ease;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+h1#roxo:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    
+}
+
+#Fundoroxo::before {
+    content: "";
+    background-color: #B31AD9;
+    display: inline;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: transform 300ms ease;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+#Fundoroxo:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
